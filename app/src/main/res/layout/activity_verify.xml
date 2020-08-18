@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mPhone"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/mPhone"
+        app:srcCompat="@drawable/safe" />
+
+    <TextView
+        android:id="@+id/mPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="12345678912"
+        android:textColor="#8E3838"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="向手机号"
+        app:layout_constraintBottom_toBottomOf="@+id/mPhone"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/mPhone" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送一条验证码"
+        app:layout_constraintBottom_toBottomOf="@+id/mPhone"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/mPhone"
+        app:layout_constraintTop_toTopOf="@+id/mPhone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mPhone"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/mPhone"
+        app:layout_constraintVertical_bias="0.523"
+        app:srcCompat="@drawable/pen" />
+
+    <TextView
+        android:id="@+id/mV1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/verify_border"
+        android:gravity="center"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/mV2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:id="@+id/mV4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/verify_border"
+        android:gravity="center"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mV3"
+        app:layout_constraintEnd_toStartOf="@+id/mV5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mV3"
+        app:layout_constraintTop_toTopOf="@+id/mV3"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:id="@+id/mV5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/verify_border"
+        android:gravity="center"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mV4"
+        app:layout_constraintEnd_toStartOf="@+id/mV6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mV4"
+        app:layout_constraintTop_toTopOf="@+id/mV4"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:id="@+id/mV6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/verify_border"
+        android:gravity="center"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mV5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mV5"
+        app:layout_constraintTop_toTopOf="@+id/mV5"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:id="@+id/mV2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/verify_border"
+        android:gravity="center"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mV1"
+        app:layout_constraintEnd_toStartOf="@+id/mV3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mV1"
+        app:layout_constraintTop_toTopOf="@+id/mV1"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:id="@+id/mV3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/verify_border"
+        android:gravity="center"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mV2"
+        app:layout_constraintEnd_toStartOf="@+id/mV4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mV2"
+        app:layout_constraintTop_toTopOf="@+id/mV2"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <EditText
+        android:id="@+id/mOrigin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.01"
+        android:ems="10"
+        android:inputType="number"
+        android:longClickable="false"
+        android:maxLength="6"
+        app:layout_constraintBottom_toBottomOf="@+id/mV1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/mV1"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
